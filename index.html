@@ -38,6 +38,9 @@
   --purple-bg: #eeedfe;
   --purple-text: #3d3799;
   --red: #D85A30;
+  --yellow: #F9F984;
+  --yellow-bg: #FDFDD8;
+  --yellow-text: #F4F430;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -224,7 +227,8 @@ html, body { height: 100%; overflow: hidden; font-family: 'DM Sans', sans-serif;
 }
 .cat-btn:active { opacity: 0.75; }
 .cat-btn.active { font-weight: 500; }
-.cat-btn.active.c-income, .cat-btn.active.c-food { background: var(--green-bg); color: var(--green-text); border-color: var(--green); }
+.cat-btn.active.c-food    { background: var(--yellow-bg); color: var(--yellow-text); border-color: var(--yellow); }
+.cat-btn.active.c-income  { background: var(--green-bg); color: var(--green-text); border-color: var(--green); }
 .cat-btn.active.c-bills   { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue); }
 .cat-btn.active.c-fun     { background: var(--pink-bg);   color: var(--pink-text);   border-color: var(--pink); }
 .cat-btn.active.c-subs    { background: var(--gray-bg);   color: var(--gray-text);   border-color: var(--gray); }
@@ -326,7 +330,7 @@ html, body { height: 100%; overflow: hidden; font-family: 'DM Sans', sans-serif;
 <script>
 const CATS = [
   { id:'income',   label:'+ Income',  cls:'cat-income',   pill:'pill-income',   btnCls:'c-income',   dot:'#1D9E75', color:'#1D9E75' },
-  { id:'food',     label:'Food',      cls:'cat-food',     pill:'pill-food',     btnCls:'c-food',     dot:'#1D9E75', color:'#1D9E75' },
+  { id:'food',     label:'Food',      cls:'cat-food',     pill:'pill-food',     btnCls:'c-food',     dot:'#F9F984', color:'#F9F984' },
   { id:'bills',    label:'Bills',     cls:'cat-bills',    pill:'pill-bills',    btnCls:'c-bills',    dot:'#378ADD', color:'#378ADD' },
   { id:'fun',      label:'Going out', cls:'cat-fun',      pill:'pill-fun',      btnCls:'c-fun',      dot:'#D4537E', color:'#D4537E' },
   { id:'subs',     label:'Subs',      cls:'cat-subs',     pill:'pill-subs',     btnCls:'c-subs',     dot:'#6b6a66', color:'#6b6a66' },
